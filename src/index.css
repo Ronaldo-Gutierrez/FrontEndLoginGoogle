@@ -25,6 +25,7 @@ body {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: -1px 1px 53px -2px rgba(0,0,0,0.15);
+  text-align: center;
 }
 
 .google{
@@ -43,4 +44,22 @@ body {
   padding: 0.5rem;
   width: 90%;
   text-align: center;
+}
+
+.cerrarSesion{
+  width: 80%;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  color: #575757;
+  margin-top: 10px;
+}
+
+.imgUser{
+  border-radius: 20%;
 }
