@@ -1,18 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const Error = ({userGoogle}) => {
-    
-    const {error,messague} = userGoogle
+const Error = ({ userGoogle }) => {
+  const { error, messague } = userGoogle;
 
-    if(error){
-        return (
-            <h3 className="error">{messague}</h3>
-        );
-    }
+  if (error) {
+    return <h3 className="error">{messague}</h3>;
+  }
 
-    return null
+  return null;
+};
 
-    
-}
- 
 export default Error;

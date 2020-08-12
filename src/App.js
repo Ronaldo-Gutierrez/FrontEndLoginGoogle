@@ -1,28 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from './components/Home'
-import GoogleData from './components/GoogleData'
+import Home from "./components/Home";
+import GoogleData from "./components/GoogleData";
+import GuardRoute from "./components/GuardRoute";
 
 function App() {
-
-  const [userGoogle, setUserGoogle] = useState({});
-
-return(
-  <div>
-    <Router>
-       <Switch>
-        <Route path="/" exact>
-          <Home userGoogle={userGoogle} setUserGoogle = {setUserGoogle}/>
-        </Route>
-        <Route path="/GoogleData" exact>
-          <GoogleData />
-        </Route>
-    </Switch>
-    </Router>
-   
-  </div>
-)
+  return (
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <GuardRoute path="/GoogleData" component={GoogleData} />
+        </Switch>
+      </Router>
+    </div>
+  );
 }
 
 export default App;
